@@ -15,12 +15,12 @@ include ("_members_list.php");
     <link rel="stylesheet" href="../css/topnav.css">
     <link rel="icon" href="../favicon.ico">
     <script src="../js/script.js"></script>
-    <title>TrombinOSIIC</title>
+    <title>TrombinO</title>
   </head>
   <body>
 
 <div class="topnav" style="position:fixed; background-color:#fff; width:100%;">
-  <a class="active" href="?">TrombinOSIIC</a>
+  <a class="active" href="?">TrombinO</a>
   
   <!-- CTA refresh data -->
   <div style="position:absolute;top:13px;left:136px;"><button onclick="window.location.href='./fetch.php';">DEBUG : Forcer la mise à jour des données (peut prendre jusqu'à 10 secondes)</button></div>
@@ -88,7 +88,7 @@ elseif (isset($_GET["s"]) && count($team_members) == 0 ) { ?>
 </div><!-- #container -->
 
 <div id="footer">
-<span>Version du 17 juillet 2023 - <a href="mailto:osiic-communication@sgdsn.gouv.fr">Contact</a></span>
+<span>Version du 17 juillet 2023 - <a href="mailto:communication@sgdsn.gouv.fr">Contact</a></span>
 
 </div><!-- #footer -->
 
