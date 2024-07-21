@@ -1,11 +1,9 @@
 <?php
 
 // Liste des membres
-$url_members = 'https://atrium.extranet.fr/osiic/wp-json/frm/v2/forms/22/entries?page_size=500';
-$url_teams = 'https://atrium.extranet.fr/osiic/wp-json/frm/v2/forms/25/entries?page_size=100';
-$http_header = array(
-	"Authorization: Basic Rlk0TC1MRjIxLU82TkktNUhLRTp4Cg==" 	
-);
+$url_members = '/frm/v2/forms/22/entries?page_size=500';
+$url_teams = '/frm/v2/forms/25/entries?page_size=100';
+
 // Requête membres
 $req1 = curl_init();
 curl_setopt($req1, CURLOPT_RETURNTRANSFER, true);
