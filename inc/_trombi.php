@@ -1,42 +1,5 @@
 <?php
-$team_members = array_map('str_getcsv', file('data/trombi-data-2024-03-20.csv'));
-
-// <foolsday>
-
-$jourdesfous = "04-01";
-$onfaitlablague = true;
-$foolsday = false;
-
-if ( $onfaitlablague == true && date("m-d") == $jourdesfous ) {
-   $foolsday = true;
-   $team_members_foolsday = $team_members;
-   shuffle($team_members_foolsday);
-
-   $fool = 0;
-   foreach ($team_members as $key => $value) {
-     $team_members[$key][7] = $team_members_foolsday[$fool][7];
-     $team_members[$key][8] = $team_members_foolsday[$fool][8];
-     $team_members[$key][9] = $team_members_foolsday[$fool][9];
-     $fool = $fool + 1;
-   };
-};
-// </foolsday>
-
-
-// Champs CSV
-//  0   TeamTrombi
-//  1   Division/Pôle
-//  2   Intitulé Division/Pôle
-//  3   Bureau/Cellule
-//  4   Intitulé Bureau/Cellule
-//  5   Service
-//  6   Intitulé Service
-//  7   Grade/Civilité
-//  8   Nom
-//  9   Prénom
-//  10  Fonction
-
-
+$team_members = array_map('str_getcsv', file('data/trombi-data-2022-12-09a.csv'));
 
 $team_members_filtered = [];
 $teams = [];
@@ -62,7 +25,7 @@ if (isset($_GET["s"])){
 // on filtre la liste d'agents
   foreach ($team_members as $team_member) {
     // echo $team_member[6];
-    if ( strpos(strtolower(normalize($team_member[8])), strtolower(normalize($_GET["s"]))) !== false || strpos(strtolower(normalize($team_member[9])), strtolower(normalize($_GET["s"]))) !== false ) {
+    if ( strpos(strtolower(normalize($team_member[6])), strtolower(normalize($_GET["s"]))) !== false || strpos(strtolower(normalize($team_member[7])), strtolower(normalize($_GET["s"]))) !== false ) {
       // echo ("yep ");
       $team_members_filtered[] = $team_member;
     };
