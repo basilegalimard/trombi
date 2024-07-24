@@ -1,5 +1,4 @@
-DIR,DIR,,1,Direction,,STRUBEL,Vincent,A+,Directeur
-DIR,DIR,,2,Direction,,CLEMENT,Emmanuel,A+,Directeur Adjoint
-GOUV/CDT,GOUV,CDT,1,Commandement,,...,...,A+,Chef du pôle gouvernance
-GOUV/COM,GOUV,COM,,Cellule communication,,HAY,Emilie,A,Chargée de communication
-GOUV/COM,GOUV,COM,,Cellule communication,,GALIMARD,Basile,A+,Ingénieur UX/UI - Admin Atrium
+DIR,DIR,Direction,,,,,M.,Verhoeven,Yves,Directeur de l'OSIIC
+GOUV/CDT,GOUV,Pôle Gouvernance,CDT,Commandement,,,MME,Azambre,Emeline,Directrice de cabinet/cheffe du Pôle Gouvernance
+GOUV/COM,GOUV,Pôle Gouvernance,COM,Cellule communication,,,MME,Maman,Léa,Chargée de communication
+GOUV/COM,GOUV,Pôle Gouvernance,COM,Cellule communication,,,M.,Galimard,Basile,Responsable création
